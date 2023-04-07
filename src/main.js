@@ -144,7 +144,7 @@ discord_client.on(Events.MessageCreate, async mc => {
                 max_tokens: 1,
             });
             console.log(`\tOpenAI returned with...\n\t\tprompt tokens: ${completion.data.usage.prompt_tokens}\n\t\tcompletion tokens: ${completion.data.usage.completion_tokens}\n\t\ttotal tokens: ${completion.data.usage.total_tokens}\n\t\trole: '${completion.data.choices[0].text}'\n\t\tfinish_reason: '${completion.data.choices[0].finish_reason}'`);
-            if (completion.data.choices[0].text.toLowerCase().charAt(0) == 'Y') {
+            if (completion.data.choices[0].text.toLowerCase().charAt(0) == 'y') {
                 console.log('\tguessed type of request: image');
                 attach = await prompt_image(msg_text);
                 resp = '';
