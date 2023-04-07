@@ -1,0 +1,10 @@
+{
+    "MESSAGE_LIMIT_LEN_MAX": 200,
+    "MESSAGE_LIMIT_LEN_MIN": 3,
+    "USER_IDS_BANNED": [
+        "445642008321589278"
+    ],
+    "USER_IDS_ADMIN": [
+        "208352709609259009"
+    ]
+}
